@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beach Weather Forecast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏖️</text></svg>">
+	
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f0f8ff;
+    }
+    h1 {
+      text-align: center;
+      color: #036;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      margin: 0 0 0.5rem;
+    }
+    .card p {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Beach Weather Forecast</h1>
+  <div class="container" id="weather-container"></div>
+  
+  
+	<!-- Cape May Weather Widget -->
+	<a class="weatherwidget-io" href="https://forecast7.com/en/38d94n74d91/cape-may/?unit=us" data-label_1="CAPE MAY" data-label_2="WEATHER" data-theme="pure">CAPE MAY WEATHER</a>
+
+	<!-- Ocean City -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/39d28n74d57/ocean-city/?unit=us" data-label_1="OCEAN CITY" data-label_2="WEATHER" data-theme="pure">OCEAN CITY WEATHER</a>
+
+    <!-- Asbury Park -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d22n74d01/asbury-park/?unit=us" data-label_1="ASBURY PARK" data-label_2="WEATHER" data-theme="pure">ASBURY PARK WEATHER</a>
+
+	<!-- Avalon (via Sea Isle City) -->
+	<a class="weatherwidget-io" href="https://forecast7.com/en/39d15n74d69/sea-isle-city/?unit=us" data-label_1="AVALON" data-label_2="WEATHER" data-theme="pure" data-units="us">AVALON WEATHER</a>
+
+    <!-- Rehoboth Beach Weather Widget -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/38d72n75d07/rehoboth-beach/?unit=us" data-label_1="REHOBOTH BEACH" data-label_2="WEATHER" data-theme="pure">REHOBOTH BEACH WEATHER</a>
+
+
+
+<!-- Philadelphia Weather Widget -->
+<a class="weatherwidget-io" 
+   href="https://forecast7.com/en/39d95n75d17/philadelphia/?unit=us" 
+   data-label_1="PHILADELPHIA" 
+   data-label_2="WEATHER" 
+   data-theme="pure"
+   data-units="us">
+   PHILADELPHIA WEATHER
+</a>
+ </div>
+ 
+ 
+ <br>
+ 
+ <section style="max-width: 800px; margin: 2rem auto; padding: 1rem; background: #ffffffcc; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.1); font-family: sans-serif;">
+  <h2 style="text-align: center; color: #036;">🏖️ Beach Day Checklist</h2>
+  <form>
+    <h3>🧍 Personal Essentials</h3>
+    <label><input type="checkbox"> Swimsuit</label><br>
+    <label><input type="checkbox"> Towel</label><br>
+    <label><input type="checkbox"> Change of clothes</label><br>
+    <label><input type="checkbox"> sandals</label><br>
+    <label><input type="checkbox"> Sunglasses</label><br>
+    <label><input type="checkbox"> Sunscreen</label><br>
+    <label><input type="checkbox"> Lip balm with SPF</label><br>
+    <label><input type="checkbox"> Water bottle</label><br>
+    <label><input type="checkbox"> ID, keys, phone, wallet</label><br>
+    <label><input type="checkbox"> Cash for parking/vendors</label><br>
+
+    <h3>🏖️ Beach Gear</h3>
+    <label><input type="checkbox"> Beach blanket or mat</label><br>
+    <label><input type="checkbox"> Beach chair</label><br>
+    <label><input type="checkbox"> Umbrella or shade tent</label><br>
+    <label><input type="checkbox"> Cooler with drinks</label><br>
+    <label><input type="checkbox"> Beach bag</label><br>
+    <label><input type="checkbox"> Wet bag or plastic bag</label><br>
+    <label><input type="checkbox"> Trash bag</label><br>
+
+    <h3>🏄 Fun & Activities</h3>
+    <label><input type="checkbox"> Book or magazine</label><br>
+    <label><input type="checkbox"> Speaker or headphones</label><br>
+    <label><input type="checkbox"> Frisbee, ball, paddleball</label><br>
+    <label><input type="checkbox"> Snorkel gear</label><br>
+    <label><input type="checkbox"> Boogie board or surfboard</label><br>
+    <label><input type="checkbox"> Waterproof camera/GoPro</label><br>
+    <label><input type="checkbox"> Waterproof camera/GoPro</label><br>
+    <label><input type="checkbox"> Waterproof camera/GoPro</label><br>
+    <label><input type="checkbox"> Waterproof camera/GoPro</label><br>
+	
+	
+    <h3>🍿 Snacks</h3>
+    <label><input type="checkbox"> Fruit (grapes, apples, berries)</label><br>
+    <label><input type="checkbox"> Trail mix or nuts</label><br>
+    <label><input type="checkbox"> Chips or pretzels</label><br>
+    <label><input type="checkbox"> Granola or protein bars</label><br>
+    <label><input type="checkbox"> Sandwiches or wraps</label><br>
+    <label><input type="checkbox"> Cookies or sweets</label><br>
+    <label><input type="checkbox"> Pear Juice</label><br>
+    <label><input type="checkbox"> Young American Cider</label><br>
+    <label><input type="checkbox"> Italian Ice</label><br>
+    <label><input type="checkbox"> Mochi Ice Cream</label><br>
+	
+	
+	<!--  Not needed
+
+    <h3>👶 With Kids</h3>
+    <label><input type="checkbox"> Swim diapers</label><br>
+    <label><input type="checkbox"> Toys/buckets/shovels</label><br>
+    <label><input type="checkbox"> Floaties or life vest</label><br>
+    <label><input type="checkbox"> Baby wipes</label><br>
+    <label><input type="checkbox"> Extra snacks/juice</label><br>
+    <label><input type="checkbox"> Extra clothes & towels</label><br>
+
+    <h3>🐾 With Pets</h3>
+    <label><input type="checkbox"> Leash</label><br>
+    <label><input type="checkbox"> Water & bowl</label><br>
+    <label><input type="checkbox"> Doggy bags</label><br>
+    <label><input type="checkbox"> Pet towel</label><br>
+    <label><input type="checkbox"> Pet sunscreen</label><br>
+	
+	 -->
+	 
+	 
+  </form>
+</section>
+
+<br>
+
+<!-- Radar Map Embed (Windy.com) -->
+<div style="width: 100%; height: 500px;">
+  <iframe
+    width="100%"
+    height="100%"
+    src="https://embed.windy.com/embed2.html?lat=39.4&lon=-74.3&detailLat=39.4&detailLon=-74.3&width=650&height=450&zoom=7&level=surface&overlay=radar&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0F&radarRange=-1"
+    frameborder="0">
+  </iframe>
+</div>
+	
+<br><br><br><br>
+
+<!-- 
+<h2>Live Lightning Map</h2>
+<div style="width: 100%; height: 500px; margin-top: 1rem;">
+  <iframe 
+    src="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=0.00;ts=0;y=39.5;z=6;x=-75.5;d=2;dl=2;dc=0;" 
+    width="100%" 
+    height="100%" 
+    style="border: none;" 
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
+-->
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);
+    js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','weatherwidget-io-js');
+</script>
+
+
+	
+
+
+</body>
+</html>
